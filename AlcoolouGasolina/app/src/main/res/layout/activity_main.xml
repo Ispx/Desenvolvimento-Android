@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_border"
+        >
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        />
+
+        <TextView
+            android:id="@+id/melhoropcao"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/layout_border"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:hint="Melhor opção"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            />
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/quilometragem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/melhoropcao"
+            android:hint="Quilometragem"
+            android:textColorHint="#EEE600"
+            android:textColorHighlight="#EEE600"
+            android:textColor="#EEE600"
+            android:inputType="number"
+        />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/precoalcool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quilometragem"
+            android:layout_marginTop="6dp"
+            android:hint="Preço Alcool"
+            android:autofillHints="Preço alcool"
+            android:textColorHint="#EEE600"
+            android:textColorHighlight="#EEE600"
+            android:textColor="#EEE600"
+            android:inputType="numberDecimal"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/precogasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precoalcool"
+            android:layout_marginTop="6dp"
+            android:hint="Preço Gasolina"
+            android:autofillHints="Preço gasolina"
+            android:textColorHint="#EEE600"
+            android:textColorHighlight="#EEE600"
+            android:textColor="#EEE600"
+            android:inputType="numberDecimal"
+
+            />
+        <Button
+            android:id="@+id/bt_calcular"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precogasolina"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/layout_border"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:text="Calcular"
+            android:textColor="#EEE600"
+            android:textStyle="bold"
+            android:clickable="true"
+
+            />
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
