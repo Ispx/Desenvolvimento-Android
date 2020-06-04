@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            app:cardCornerRadius="50px"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="@dimen/cardview_default_radius"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculadora de Gorjeta"
+                android:textColor="#FF9800"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                />
+
+        <ImageView
+            android:id="@+id/img_gorjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gorjeta"
+            android:background="@drawable/border_in_layout"
+        />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/valor_da_mesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview"
+            android:backgroundTint="#FF9800"
+            android:hint="Valor da mesa"
+            android:autofillHints="Valor da mesa"
+            android:layout_marginTop="30dp"
+            android:inputType="numberDecimal"
+
+            />
+        <TextView
+            android:id="@+id/textView_porcentagem_gorjeta"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.02"
+            android:layout_below="@id/valor_da_mesa"
+            android:background="@drawable/border_in_layout"
+            android:paddingRight="3dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <SeekBar
+            android:id="@+id/seelbar_gorjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:max="100"
+            android:layout_toRightOf="@id/textView_porcentagem_gorjeta"
+            android:layout_alignBaseline="@id/textView_porcentagem_gorjeta"
+            android:progressBackgroundTint="#FFC107"
+            android:outlineSpotShadowColor="#FFC107"
+            android:outlineAmbientShadowColor="#FFC107"
+            android:progressTint="#FFC107"
+            android:backgroundTint="#FFC107"
+            />
+        <TextView
+            android:id="@+id/text_gorjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_porcentagem_gorjeta"
+            android:text="Gorjeta"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="30dp"
+
+            />
+        <TextView
+            android:id="@+id/text_valor_gorjeta"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/text_gorjeta"
+            android:layout_below="@id/textView_porcentagem_gorjeta"
+            android:background="#9AFF9800"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:id="@+id/text_total"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/text_gorjeta"
+            android:text="Total"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="30dp"
+
+            />
+        <TextView
+            android:id="@+id/text_valor_total"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/text_gorjeta"
+            android:layout_below="@id/text_gorjeta"
+            android:background="#9AFF9800"
+            android:layout_marginTop="30dp"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
