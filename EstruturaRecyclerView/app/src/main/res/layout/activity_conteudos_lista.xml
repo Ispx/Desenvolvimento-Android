@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="6dp"
+    android:background="#CDFFFFFF">
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_oval"
+        android:background="@drawable/icon_oval"
+        android:text="G"
+        android:textSize="46sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:clickable="false"
+        />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/botao"
+        android:layout_marginLeft="6dp"
+        android:text="Gabriel Santos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+</RelativeLayout>
