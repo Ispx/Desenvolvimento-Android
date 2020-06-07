@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.Arrays;
@@ -37,6 +38,8 @@ public class Activity_RecyclerView extends AppCompatActivity {
         AdaptadorDeConteúdos adaptadorDeConteúdos = new AdaptadorDeConteúdos(usuarios);
         recyclerView.setAdapter(adaptadorDeConteúdos);
         recyclerView.setHasFixedSize(true);
+        //Adicionado um divisor entre as views
+        recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
     }
 }
 
