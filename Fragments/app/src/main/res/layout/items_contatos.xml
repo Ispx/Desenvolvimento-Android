@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="3dp"
+    android:background="@drawable/border_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#69000000"
+        >
+    <ImageView
+        android:id="@+id/icon_image"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_account_circle_black_24dp"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/contatoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon_image"
+        android:layout_marginLeft="10dp"
+        android:text="Isaque Santos"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/icon_phone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_phone_black_24dp"
+        android:backgroundTint="#4AEA50"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/contatoName"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
