@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,6 +34,18 @@ public class multiplo_activity extends AppCompatActivity {
         AdapterClass adapterClass = new AdapterClass(this,contatoList);
         listView.setAdapter(adapterClass);
 
+
+
+        //Evento de click
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Contato conta = contatoList.get(position);
+
+                Toast.makeText(multiplo_activity.this,conta.getNome(),Toast.LENGTH_LONG).show();
+
+            }
+        });
     }
 
 }

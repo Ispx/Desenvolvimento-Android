@@ -2,8 +2,11 @@ package com.example.estruturalistview;
 
 import android.os.Bundle;
 
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,10 +24,22 @@ public class simple_activity extends AppCompatActivity {
 
         listView = findViewById(R.id.listview);
 
+
+        //Evento de click
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(simple_activity.this,listaDeUsuários.get(position),Toast.LENGTH_SHORT).show();
+            }
+        });
+
         adaptarConteudosNaLista(listaDeUsuários);
+
     }
 
-    public void adaptarConteudosNaLista(List<String> lista){
+
+public void adaptarConteudosNaLista(List<String> lista){
+
         listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_checked,lista));
         /* Tipos de layouts de listagem para implementar
 
@@ -61,8 +76,6 @@ public class simple_activity extends AppCompatActivity {
 
     }
 
-
-
-
-
 }
+
+
