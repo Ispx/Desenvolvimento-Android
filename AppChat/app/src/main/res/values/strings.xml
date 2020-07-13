@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppChat</string>
+    <string name="contatos">Contatos</string>
+    <string name="sair">Sair</string>
+</resources>

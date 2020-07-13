@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <EditText
+        android:id="@+id/edt_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/borda"
+        android:padding="15dp"
+        android:hint="E-mail"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/edt_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/edt_login_email"
+        android:background="@drawable/borda"
+        android:padding="15dp"
+        android:hint="Password"
+        android:inputType="numberPassword"
+    />
+    
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_login_password"
+        android:layout_margin="30dp"
+        android:padding="15dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/borda"
+        android:backgroundTint="#4CAF50"
+        android:onClick="onLogin"
+        />
+    
+    
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clique aqui para se cadastrar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:textColor="#4CAF50"
+        android:clickable="true"
+        android:onClick="textRegister"
+        />
+</RelativeLayout>
